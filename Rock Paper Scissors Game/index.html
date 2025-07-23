@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissor Game</h1>
+    <h3 id="userChoiceMsg"></h3>
+    <h3 id="computerChoiceMsg"></h3>
+    <h3 id="resultMsg"></h3>
+
+    <button id="Rock" class="button" onclick="
+    userChoice='Rock'; computerchoicegenerator(); displaymsg()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkjNaqC-ZxPzwWViMmV4DoXqhHYMOnqjd8gg&usqp=CAU" alt="" ></button>
+    <button id="Paper" class="button" onclick="
+    userChoice='Paper'; computerchoicegenerator(); displaymsg()"><img src="https://image.pngaaa.com/787/3313787-middle.png" alt="" ></button>
+    <button id="Scissors" class="button" onclick="
+    userChoice='Scissor'; computerchoicegenerator();displaymsg()"><img src="https://www.vhv.rs/dpng/d/490-4906131_rock-paper-scissors-clipart-rock-paper-scissors-png.png" alt=""></button>
+
+    <h2 id="score">Score: Win:0, Lost:0, Tie:0</h2>
+    <button id="reset" onclick="resetgame()">Play Again</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

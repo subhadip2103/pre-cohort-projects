@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let randomnumber1 = Math.random() * 3;
+        let randomnumber2 = Math.random() * 3;
+        let randomnumber3 = Math.random() * 3;
+        let businessName;
+        let firstName;
+        let secondName;
+        let thirdName; // Fixed the variable name to be consistent with JavaScript naming conventions
+
+        // Determine names based on random numbers
+        if (randomnumber1 <= 1 && randomnumber2 <= 1 && randomnumber3 <= 1) {
+            firstName = 'crazy';
+            secondName = 'Engine';
+            thirdName = 'Bros';
+        }
+        else if (randomnumber1 > 1 && randomnumber1 <= 2 && randomnumber2 > 1 && randomnumber2 <= 2 && randomnumber3 > 1 && randomnumber3 <= 2) {
+            firstName = 'Amazing';
+            secondName = 'Foods';
+            thirdName = 'Limited';
+        }
+        else {
+            firstName = 'Fire';
+            secondName = 'Garment';
+            thirdName = 'Hub';
+        }
+
+        // Now assign businessName after the names are initialized
+        businessName = firstName + ' ' + secondName + ' ' + thirdName;
+
+        console.log(businessName);
+    //     console.log(randomnumber1);
+    //     console.log(randomnumber2);
+    //     console.log(randomnumber3);
+    // </script>
+</body>
+
+</html>

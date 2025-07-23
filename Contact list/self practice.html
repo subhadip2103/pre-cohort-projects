@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact list</title>
+</head>
+
+<body>
+    <script>
+        contact = {
+            name: '',
+            phoneNumber: '',
+            email: ''
+        }
+        function addContact(name, phoneNumber, email) {
+            contact.name = name;
+            contact.phoneNumber = phoneNumber;
+            contact.email = email;
+        }
+        function deleteContact() {
+            contact.name = '';
+            contact.phoneNumber = '';
+            contact.email = '';
+        }
+        function searchContact(name) {
+            
+            if (name === contact.name) {
+                alert('Contact found');
+                console.log(`Name:${contact.name}, Phone Number:${contact.phoneNumber}, Email:${contact.email}`);
+            }
+            else{
+                alert('Contact not found')
+                console.log('Contact not found')
+            }
+        }
+        function displayContact() {
+            console.log(`Name:${contact.name}, Phone Number:${phoneNumber}, Email:${email}`);
+
+        }
+        
+        addContact('Gangadhar',8452618083,'gangadhar802@gmail.com');
+        addContact('Ramesh',8532674105,'ramesh2004@gmail.com');
+        addContact('Mayur',756314523,'mayur123@gmail.com')
+        
+        searchContact('Mayur')
+    </script>
+</body>
+
+</html>

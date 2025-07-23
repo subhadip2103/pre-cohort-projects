@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact list</title>
+</head>
+
+<body>
+
+    <script>
+        let Contact = {
+            name: '',
+            phoneNumber: '',
+            email: '',
+        }
+        function setContact(name, phoneNumber, email) {
+            Contact.name = name;
+            Contact.phoneNumber = phoneNumber;
+            Contact.email = email;
+        }
+        function displayContact() {
+            console.log(`Name: ${Contact.name}, Phone Number: ${Contact.phoneNumber}, Email:${Contact.email}`);
+        }
+        setContact('Rohan', 8745345712 ,'zerefvicks@gmail.com')
+        displayContact();
+        function searchContact(name){
+            if(name===Contact.name){
+                console.log(`Name:${Contact.name}, Phone Number:${Contact.phoneNumber}, Email:${Contact.email}`);
+            }
+            else{
+                console.log('Contact not found');
+            }
+        }
+        function deleteContact(){
+            Contact.name='';
+            Contact.phoneNumber='';
+            Contact.email='';
+
+            console.log('Contact deleted.');
+
+        }
+
+        setContact('Sohan',845918085,'kevinoleary@gmail.com');
+        // displayContact();
+        searchContact('Sohan');
+        deleteContact();
+        searchContact('Sohan')
+    </script>
+</body>
+
+</html>

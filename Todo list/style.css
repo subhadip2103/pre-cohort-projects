@@ -1,0 +1,151 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    background-image: url('https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnphrgz8yfnjylrwfr0yl.png'); /* Use a professional background image URL here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+#app-container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background to ensure readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Text */
+#welcome-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Heading */
+#main-heading {
+    font-size: 60px;
+    color: #333;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Input Field and Button */
+#todo-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#todo-display, #date-display {
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    margin-right: 10px;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-button {
+    padding: 15px 25px;
+    background: linear-gradient(145deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -2px -2px 8px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#add-button:hover {
+    background: linear-gradient(145deg, #66bb6a, #4caf50);
+    transform: translateY(-2px);
+}
+
+/* Sticky Notes Container */
+#containerElement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Sticky Note Styles */
+.sticky-note {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    position: relative;
+    transform: rotate(-2deg);
+    transition: transform 0.2s;
+}
+
+.sticky-note:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.sticky-note button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-note button:hover {
+    background-color: #e53935;
+}
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Sticky Note Shake and Disappear */
+.sticky-note.shake {
+    animation: shake 1s ease;
+}
+
+.sticky-note.disappear {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+

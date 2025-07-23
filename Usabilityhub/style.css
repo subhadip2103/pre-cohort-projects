@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.banner{
+    padding: 15px;
+    margin-inline: auto;
+    text-align: center;
+    background-color: #e74694;
+    background-image:url(https://usabilityclone.vercel.app/images/asset%2032.png);
+    background-size: 300px;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+
+}
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+li{
+    padding: 20px;
+}
+.heading{
+    display: flex;
+    align-items: ;
+    
+}
+.heading>button{
+    margin: 0px 20px;
+    display: flex;
+    
+    
+}
+.button1{
+    font-size: 1.10rem;
+    padding:12px 24px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: white;
+    height: fit-content;
+    
+    
+    
+
+}
+.button2{
+    font-size: 1.10rem;
+    padding:12px 24px;
+    border-radius: 5px;
+    background-color: #2294ed;
+    border: none;
+    color: white;
+    height: fit-content;
+    
+}
+h1{
+    font-size: 3rem;
+    font-weight: 200px;
+}
+p{
+    font-size: 1.25rem;
+}
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.hero>.text>button
+{
+    padding: 12px 24px;
+    background-color:#2294ed;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1.10rem;
+    color: white;
+
+
+}
+.hero{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.companypara{
+    text-align: center;
+}
+.companypara>p{
+    
+    padding: 20px;
+}
+.companyimage{
+    display: flex;
+    gap: 48px;
+}
+.features>h1{
+    font-size: 2rem;
+    margin-top: 110px;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+button{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.featuresdetail{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    text-align: center;
+}
+.learnmorebutton{
+    display: flex;
+    justify-content: center;
+}
+.bigfeature{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+}
+.bigfeaturetext{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.founder{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.examplecard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.card{
+    height: 300px;
+    width: 256px;
+    padding: 20px;
+    color: white;
+    
+}
+.card1{
+    background-image: url(https://usabilityclone.vercel.app/images/asset%2036.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+
+}
+.card2{
+    background-image: url(https://usabilityclone.vercel.app/images/asset%2037.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+
+}
+.card3{
+     background-image: url(https://usabilityclone.vercel.app/images/asset%2038.jpeg);
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: flex-end;
+}
+.card4{
+    background-image: url(https://usabilityclone.vercel.app/images/asset%2039.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+.exampletext{
+  display: grid;
+  grid-template-columns: auto ;
+}
+.exampletext> button{
+    
+}

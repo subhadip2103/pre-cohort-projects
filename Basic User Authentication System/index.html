@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic User Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <input type="text" placeholder="Username" id="username">
+    <input type="Password" placeholder="Password" id="password">
+    <button onclick="validateLogin();" id="button">Submit</button>
+
+
+
+    <script>
+        let storedusername='kevin123';
+        let storedpassword='kevin4532';
+
+
+        function validateLogin(){
+            let usernameInput=document.querySelector('#username').value;
+            let passwordInput=document.querySelector('#password').value;
+
+            if(usernameInput===storedusername && storedpassword===passwordInput){
+                alert('Login succesful!');
+                showlogoutButton();
+            }
+            else{
+                alert('Incorrect Username or Password');
+                document.querySelector('#username').value='';
+                document.querySelector('#password').value='';
+            }
+            
+        }
+        function showlogoutButton(){
+           
+                document.body.innerHTML='<button onclick="logout()">logout</button>'
+            
+            
+        }
+        function logout(){
+            alert('Logged out succesfullly!');
+            location.reload();
+        }
+    </script>
+</body>
+</html>

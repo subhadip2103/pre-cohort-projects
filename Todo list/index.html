@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="getUserName();">
+        <!-- Welcome message that will display after the prompt -->
+        <div id="welcome-container"></div>
+        
+        <div id="app-container">
+            <h1 id="main-heading">Todo App</h1>
+            <div id="todo-input-container">
+                <!-- Input fields and Add button -->
+                <input id="todo-display" type="text" placeholder="Enter Todo here">
+                <input id="date-display" type="date">
+                <button id="add-button" onclick="addtask();">Add</button>
+            </div>
+    
+            <!-- Container for displaying the to-do tasks -->
+            <div id="containerElement"></div>
+        </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

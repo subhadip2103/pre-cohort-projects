@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let biodata={
+            Name:'Sohan',
+            Age:21,
+            Gender:'Male',
+            Company:'Microsoft',
+        }
+        let currentstatus=JSON.parse(localStorage.getItem('Biodata'));
+        console.log(currentstatus);
+        localStorage.setItem('Biodata',JSON.stringify(biodata));
+        
+        let experience=5;
+        localStorage.setItem('Experience',JSON.stringify(experience));
+        let yearsOfExpereince=localStorage.getItem('Experience');
+        console.log(yearsOfExpereince)
+    </script>
+
+</body>
+</html>
